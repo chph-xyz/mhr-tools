@@ -1,0 +1,54 @@
+h1 {
+    color: white;
+}
+
+.par1 {
+   font-family:'Courier New', Courier, monospace;
+   font-size: 25px;
+   color:white;
+}
+
+body {
+    background-color: black;
+}
+
+/* Container for radio buttons */
+.radio-container {
+    display: flex; /* Enables flexbox layout */
+    flex-wrap: wrap; /* Allows items to wrap if there's not enough space */
+    gap: 10px; /* Adds space between radio buttons */
+    align-items: center; /* Vertically centers items */
+}
+
+/* Hide the default radio buttons */
+input[type="radio"] {
+    display: none; /* This hides the actual radio button */
+}
+
+/* Style the labels to look like custom radio buttons */
+.label2 {
+    background-color: #f0f0f0; /* Background color */
+    width: 30px; /* Width of the circular button */
+    height: 40px; /* Height of the circular button */
+    display: flex; /* Flexbox layout for centering */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    cursor: pointer; /* Cursor change on hover */
+    font-weight: bold; /* Bold text */
+    color: #000000; /* Text color */
+}
+
+.label2:hover {
+    background-color: rgb(151, 215, 255);
+}
+
+/* Style for the selected radio button */
+input[type="radio"]:checked + label {
+    background-color: #007bff; /* Change background color when checked */
+    color: white; /* Change text color when checked */
+}
+
+.body2 {
+    padding: 25px;
+    text-align: left;
+}
