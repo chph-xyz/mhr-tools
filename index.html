@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+    <!--insert raw damage, choose AB value, bool powertalon/powercharm-->
+    <!--((raw + charm/talon) * atk bst multiplier) + atk bst bonus-->
+        <div class="body2">
+            <div class="par1">
+                <label for="weaponAttack">Weapon Attack:</label><br>
+                <input type="number" id="weaponAttack" name="weaponAttack" placeholder="enter raw weapon attack:" oninput="calculate()"><br><br>
 
+                <label>Boosts:</label><br>
+                <input type="checkbox" id="powercharm" name="powercharm" value="powercharm" onchange="calculate()">
+                <label for="powercharm">Powercharm (+6)</label><br>
+                <input type="checkbox" id="powertalon" name="powertalon" value="powertalon" onchange="calculate()">
+                <label for="powertalon">Powertalon (+9)</label><br><br>
+
+                <label>Attack Boost:</label><br><br>
+                <div class="radio-container" id="attackBoostForm">
+                    <input type="radio" id="option0" name="attackBoost" value="0" onchange="calculate()">
+                    <label class="label2" for="option0">0</label>
+
+                    <input type="radio" id="option1" name="attackBoost" value="1" onchange="calculate()">
+                    <label class="label2" for="option1">1</label>
+
+                    <input type="radio" id="option2" name="attackBoost" value="2" onchange="calculate()">
+                    <label class="label2" for="option2">2</label>
+
+                    <input type="radio" id="option3" name="attackBoost" value="3" onchange="calculate()">
+                    <label class="label2" for="option3">3</label>
+
+                    <input type="radio" id="option4" name="attackBoost" value="4" onchange="calculate()">
+                    <label class="label2" for="option4">4</label>
+
+                    <input type="radio" id="option5" name="attackBoost" value="5" onchange="calculate()">
+                    <label class="label2" for="option5">5</label>
+
+                    <input type="radio" id="option6" name="attackBoost" value="6" onchange="calculate()">
+                    <label class="label2" for="option6">6</label>
+
+                    <input type="radio" id="option7" name="attackBoost" value="7" onchange="calculate()">
+                    <label class="label2" for="option7">7</label>
+                </div><br><br>
+
+                <label>Your total attack is:</label>
+                <p id="totalAttack"></p>
+            </div>
+        </div>
+        <script src="MHR.js" defer></script>
+    </body>
+</html>
