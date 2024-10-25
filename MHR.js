@@ -50,7 +50,7 @@ function calculate() {
     }
 
     // Calculate the sum
-    let totalAttack = Math.floor(((weaponAttack + powercharm + powertalon) * atkBstMultiplier) + atkBstBonus + 0.1);
+    let totalAttack = Math.floor(((weaponAttack + powercharm + powertalon) * atkBstMultiplier) + atkBstBonus);
 
     // Display the result
     document.getElementById('totalAttack').innerText = totalAttack; // Change to innerText for <p>
